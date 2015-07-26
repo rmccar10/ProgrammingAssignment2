@@ -1,6 +1,6 @@
 ## This function will invert a matrix if one is present, and if not it will create a matrix and then invert it
 
-## The first function creates a special vector if one doesn't already exist
+## The first function creates a matrix if one doesn't already exist
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -18,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## This function inverts the vector above
+## This function inverts the matrix
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
